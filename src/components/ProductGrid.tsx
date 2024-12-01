@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-import { useState, useEffect } from 'react';
-import { collection, getDocs, query, limit } from 'firebase/firestore';
-import { db } from '../config/firebase';
-import { Product } from '../types';
-import ProductCard from './ProductCard';
-=======
 import { useState, useEffect } from "react";
 import { collection, getDocs, query, limit } from "firebase/firestore";
 import { db } from "../config/firebase";
 import { Product } from "../types";
 import ProductCard from "./ProductCard";
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
 
 export default function ProductGrid() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -19,17 +11,6 @@ export default function ProductGrid() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-<<<<<<< HEAD
-        const q = query(collection(db, 'products'), limit(6));
-        const querySnapshot = await getDocs(q);
-        const productsData = querySnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        })) as Product[];
-        setProducts(productsData);
-      } catch (error) {
-        console.error('Erreur lors de la récupération des produits:', error);
-=======
         const q = query(collection(db, "products"), limit(6));
         const querySnapshot = await getDocs(q);
         const productsData = querySnapshot.docs.map((doc) => ({
@@ -39,7 +20,6 @@ export default function ProductGrid() {
         setProducts(productsData);
       } catch (error) {
         console.error("Erreur lors de la récupération des produits:", error);
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
       } finally {
         setLoading(false);
       }
@@ -63,11 +43,6 @@ export default function ProductGrid() {
   return (
     <section className="py-8 md:py-12 lg:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<<<<<<< HEAD
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8">
-          Nos Produits
-        </h2>
-=======
         <div className="flex items-center gap-4 mb-6 md:mb-8">
           <div className="p-2 bg-teal-600 text-white rounded-full shadow-md">
             <svg
@@ -90,7 +65,6 @@ export default function ProductGrid() {
           </h2>
         </div>
 
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
         {products.length === 0 ? (
           <p className="text-center text-gray-500">
             Aucun produit disponible pour le moment.
@@ -105,8 +79,4 @@ export default function ProductGrid() {
       </div>
     </section>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)

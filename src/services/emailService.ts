@@ -27,17 +27,10 @@ export const sendOrderEmail = async (params: OrderEmailParams) => {
 
     // Envoyer l'email
     const emailResponse = await emailjs.send(
-<<<<<<< HEAD
-      "service_yrt97yo",
-      "template_1n04l3e",
-      {
-        to_email: "chehem21@gmail.com",
-=======
       "service_5hjsevo",
       "template_3eq3v5m",
       {
         to_email: "djibouti.aura@gmail.com",
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
         customer_name: params.customerName,
         customer_email: params.customerEmail,
         customer_phone: params.customerPhone,
@@ -46,11 +39,7 @@ export const sendOrderEmail = async (params: OrderEmailParams) => {
         order_items: formattedItems,
         order_total: params.orderTotal,
       },
-<<<<<<< HEAD
-      "FAPYgCzCX6t9y-bXC"
-=======
       "wfZ5PyVxre0W1iaUK"
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
     );
 
     return emailResponse;
@@ -63,27 +52,16 @@ export const sendOrderEmail = async (params: OrderEmailParams) => {
 export const sendContactEmail = async (params: ContactEmailParams) => {
   try {
     const response = await emailjs.send(
-<<<<<<< HEAD
-      "service_yrt97yo",
-      "template_cpvpmmn",
-=======
       "service_5hjsevo",
       "template_yo06uup",
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
       {
         from_name: params.name,
         from_email: params.email,
         phone: params.phone,
         message: params.message,
-<<<<<<< HEAD
-        to_email: "chehem21@gmail.com",
-      },
-      "FAPYgCzCX6t9y-bXC"
-=======
         to_email: "djibouti.aura@gmail.com",
       },
       "wfZ5PyVxre0W1iaUK"
->>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
     );
 
     return response;
