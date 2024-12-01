@@ -8,6 +8,10 @@ export default function Home() {
       <Hero />
       <FeaturedProducts />
       <ProductGrid />
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
     </main>
   );
 }

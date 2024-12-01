@@ -57,8 +57,12 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-sky-500" />
+<<<<<<< HEAD
                 <span>+253 77 55 20 28 </span>
               
+=======
+                <span>+253 77 55 20 28 ou 77 30 70 51</span>
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-sky-500" />

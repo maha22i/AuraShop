@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+=======
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
 
 export default function Hero() {
   return (
@@ -8,6 +13,7 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
           alt="Fashion Store"
+<<<<<<< HEAD
           className="w-full h-full object-cover opacity-20"
         />
       </div>
@@ -20,6 +26,22 @@ export default function Hero() {
           <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-6 md:mb-8">
             Les dernières tendances de la mode à Djibouti. Des vêtements de qualité pour toute la famille.
           </p>
+=======
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="relative h-full max-w-7xl mx-auto px-4 lg:px-8 flex items-center">
+        <div className="max-w-xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+            Découvrez votre style unique
+          </h1>
+          <p className="text-base md:text-lg lg:text-xl text-white mb-6 md:mb-8">
+            Les dernières tendances de la mode à Djibouti. Des vêtements de
+            qualité pour toute la famille.
+          </p>
+
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/hommes"
@@ -38,8 +60,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       
       
     </div>
   );
 }
+=======
+    </div>
+  );
+}
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)

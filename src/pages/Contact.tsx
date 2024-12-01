@@ -62,7 +62,11 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-800">Téléphone</h3>
                   <p className="text-gray-600">+253 77 55 20 28</p>
+<<<<<<< HEAD
                   <p className="text-gray-600">+33 07 75 84 09 62</p>
+=======
+                  <p className="text-gray-600">+253 77 30 70 51</p>
+>>>>>>> 23af5a2 (amelioration des quelque pages et supression des clés firebase)
                 </div>
               </div>
               <div className="flex items-start group hover:scale-105 transition-all">
